@@ -19,7 +19,7 @@ const Messages = ({ messages, isLoading }: Props) => {
           <div
             key={index}
             className={`p-4 shadow-md rounded-md ml-10 relative ${
-              m.role === "user" ? "bg-stone-300" : ""
+              m.role === "user" ? "bg-stone-300" : "bg-white"
             }`}
           >
             <Markdown text={m.content} />
