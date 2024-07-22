@@ -1,19 +1,19 @@
-import { useEffect } from 'react';
+import Script from 'next/script';
+import React from 'react'
 
-const AdSenseScript: React.FC = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4592814778191453';
-    script.async = true;
-    script.crossOrigin = 'anonymous';
-    document.head.appendChild(script);
+type AdsenseTypes = {
+    pId: string;
+}
 
-    const inlineScript = document.createElement('script');
-    inlineScript.innerHTML = `(adsbygoogle = window.adsbygoogle || []).push({});`;
-    document.head.appendChild(inlineScript);
-  }, []);
+const AdSense = ({ pId }: AdsenseTypes) => {
+  return (
+    <Script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${pId}`}
+        crossOrigin='anonymous'
+        strategy='afterInteractive'
+    />
+  )
+}
 
-  return null;
-};
-
-export default AdSenseScript;
+export default AdSense

@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <AdSense pId="ca-pub-4592814778191453"/>
+      </head>
       <body className={scp.className}>{children}</body>
     </html>
   );

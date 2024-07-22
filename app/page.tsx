@@ -16,15 +16,6 @@ import { ChangeEvent, useState } from "react";
 import SelectedImages from "./component/selectedImages";
 import Messages from "./component/messages";
 import InputForm from "./component/inputForm";
-import AdSenseScript from './component/AdSenseScript';
-const App: React.FC = () => {
-  return (
-    <div>
-      <AdSenseScript />
-      {/* Your other components */}
-    </div>
-  );
-};
 
 export default function Home() {
   const { messages, input, handleInputChange, handleSubmit, isLoading, stop } =
