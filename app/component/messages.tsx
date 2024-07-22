@@ -2,17 +2,6 @@ import React from "react";
 import Markdown from "./markdown";
 import { Bot, User2 } from "lucide-react";
 import { Message } from "ai/react";
-import AdSenseScript from './AdSenseScript';
-
-const App: React.FC = () => {
-  return (
-    <div>
-      <AdSenseScript />
-      {/* Your other components */}
-    </div>
-  );
-};
-
 
 type Props = {
   messages: Message[],
