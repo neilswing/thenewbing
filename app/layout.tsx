@@ -21,8 +21,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <AdSense pId="ca-pub-4592814778191453"/>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4592814778191453"
-        crossorigin="anonymous"></script>
       </head>
       <body className={scp.className}>{children}</body>
     </html>
