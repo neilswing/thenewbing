@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Sacramento, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import AdSense from "./component/AdSenseScript";
 
 const inter = Inter({ subsets: ["latin"] });
 const scp = Source_Code_Pro({ subsets: ["latin"] });
