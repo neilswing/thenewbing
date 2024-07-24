@@ -26,15 +26,15 @@ export default function RootLayout({
           src="//produceragony.com/1d/8c/09/1d8c0950213135ab99eaa34cc2de75a9.js"
           strategy="afterInteractive"
         />
-      </head>
-      <body className={scp.className}>
-        {children}
         <Script 
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4592814778191453"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+      </head>
+      <body className={scp.className}>
+        {children}
         <ins className="adsbygoogle"
              style={{ display: "block" }}
              data-ad-client="ca-pub-4592814778191453"
