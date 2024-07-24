@@ -22,6 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <AdSense pId="ca-pub-4592814778191453"/>
+        <Script 
+          src="//produceragony.com/1d/8c/09/1d8c0950213135ab99eaa34cc2de75a9.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={scp.className}>{children}</body>
     </html>
