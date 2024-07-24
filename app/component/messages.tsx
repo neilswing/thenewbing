@@ -2,6 +2,7 @@ import React from "react";
 import Markdown from "./markdown";
 import { Bot, User2 } from "lucide-react";
 import { Message } from "ai/react";
+import AdSense from "./AdSenseScript";
 
 type Props = {
   messages: Message[],
