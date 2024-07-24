@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Sacramento, Source_Code_Pro } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import AdSense from "./component/AdSenseScript";
 
 const inter = Inter({ subsets: ["latin"] });
 const scp = Source_Code_Pro({ subsets: ["latin"] });
 const sacramento = Sacramento({ subsets: ["latin"], weight: ["400"] });
-
 
 export const metadata: Metadata = {
   title: "BingBlong AI",
@@ -22,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <AdSense pId="ca-pub-4592814778191453"/>
-        <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7774195,document.body||document.documentElement)</script>
+        <Script id="zovidree-script">
+          {`(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7774195,document.body||document.documentElement)`}
+        </Script>
       </head>
       <body className={scp.className}>{children}</body>
     </html>
