@@ -27,7 +27,24 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className={scp.className}>{children}</body>
+      <body className={scp.className}>
+        {children}
+        <Script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4592814778191453"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+        <ins className="adsbygoogle"
+             style={{ display: "block" }}
+             data-ad-client="ca-pub-4592814778191453"
+             data-ad-slot="1158100898"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <Script id="adsbygoogle-init" strategy="afterInteractive">
+          {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+        </Script>
+      </body>
     </html>
   );
 }
