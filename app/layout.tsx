@@ -22,10 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <AdSense pId="ca-pub-4592814778191453"/>
-        <meta name="monetag" content="b442fb8029d8f5db522b430670d99f2f" />
-        <Script id="zovidree-script">
-          {`(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7774195,document.body||document.documentElement)`}
-        </Script>
       </head>
       <body className={scp.className}>{children}</body>
     </html>
